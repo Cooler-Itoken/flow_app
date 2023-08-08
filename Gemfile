@@ -75,3 +75,7 @@ group :test do
   gem 'rspec-rails'
   gem 'factory_bot_rails'
 end
+
+# group :production do
+#   gem "pg", "1.3.5"
+# end
