@@ -8,6 +8,9 @@ gem "rails", "~> 7.0.6"
 gem "bootstrap-sass",  "3.4.1"
 gem "bcrypt",          "3.1.18"
 gem "ruby-openai"
+gem "faker",           "2.21.0"
+gem "will_paginate",           "3.3.1"
+gem "bootstrap-will_paginate", "1.0.0"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -71,7 +74,6 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
-  gem "webdrivers"
   gem 'rspec-rails'
   gem 'factory_bot_rails'
 end
