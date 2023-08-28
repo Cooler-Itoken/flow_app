@@ -5,6 +5,8 @@ FactoryBot.define do
         password { 'password' }
         password_confirmation { 'password' }
         admin { true }
+        activated { true }
+        activated_at { Time.zone.now }
     end
 
     factory :another_user, :class => 'User' do
