@@ -5,6 +5,8 @@ ruby "3.2.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.6"
+gem "image_processing",           "1.12.2"
+gem "active_storage_validations", "0.9.8"
 gem "bootstrap-sass",  "3.4.1"
 gem "bcrypt",          "3.1.18"
 gem "ruby-openai"
@@ -78,6 +80,7 @@ group :test do
   gem 'factory_bot_rails'
 end
 
-# group :production do
+group :production do
 #   gem "pg", "1.3.5"
-# end
+  gem "aws-sdk-s3", "1.114.0", require: false
+end
