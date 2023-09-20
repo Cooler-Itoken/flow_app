@@ -13,6 +13,8 @@ gem "ruby-openai"
 gem "faker",           "2.21.0"
 gem "will_paginate",           "3.3.1"
 gem "bootstrap-will_paginate", "1.0.0"
+gem 'dotenv-rails'
+gem 'deepl-rb', require: 'deepl'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -70,6 +72,7 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem 'pry-rails'
 end
 
 group :test do

@@ -3,7 +3,21 @@ class MicropostsController < ApplicationController
     before_action :correct_user,   only: :destroy
 
     def create
-        @micropost = current_user.microposts.build(micropost_params)
+        # prompt = "以下の文章の質問に答えてください。文章:今日は何曜日？"
+        # prompt = "以下の文章の質問に答えてください。文章:#{micropost_params["content"]}"
+        prompt = "以下の私の強み・現状から、挑戦すべきアクションを140文字以内で簡潔に一つ提示してください。文章:#{micropost_params["content"]}"
+        client = OpenAI::Client.new(access_token: @api_key)
+        response = client.chat(
+            parameters: {
+            model: "gpt-3.5-turbo",
+            messages: [{ role: "user", content: prompt}],
+            temperature: 0.7,
+            }
+        )
+        revised_content = response.dig("choices", 0, "message", "content")
+        revised_content = revised_content.to_s.delete('「」”')
+        @micropost = current_user.microposts.build(content: revised_content[0..139])
+        # @micropost = current_user.microposts.build(micropost_params)
         @micropost.image.attach(params[:micropost][:image])
         if @micropost.save
             flash[:success] = "Micropost created!"
