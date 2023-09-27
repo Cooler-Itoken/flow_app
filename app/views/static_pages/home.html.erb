@@ -18,18 +18,22 @@
   </div>
 <% else %>
   <div class="center jumbotron">
-    <h1>Welcome to the Sample App</h1>
+    <h1>Welcome to Flow App</h1>
 
     <h2>
-      This is the home page for the
-      <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
-      sample application.
+      <p>フロー（夢中）状態を生み出すソーシャルメディア</p>
+      <p><br>【幸福の方程式】</br>自分の強み×最適な課題＝フロー（夢中）状態</p>
+      <p>このアプリは、あなたの強みに最適な課題をAIが提示してくれるアプリです。</p>
     </h2>
 
     <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
   </div>
 
-  <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
-                        "https://rubyonrails.org/" %>
-
+  <div class="logo">
+    <div style="display: flex;">
+      <%#= link_to image_tag("flow_app.png", alt: "Rails logo", width: "200"),
+                            "https://rubyonrails.org/" %>
+      <%= link_to image_tag("flow-channel.jpg", alt: "flow-channel", width: "300"), '#' %>
+    </div>
+  </div>
 <% end %>

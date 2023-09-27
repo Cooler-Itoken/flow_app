@@ -5,13 +5,14 @@ class MicropostsController < ApplicationController
     def create
         # prompt = "以下の文章の質問に答えてください。文章:今日は何曜日？"
         # prompt = "以下の文章の質問に答えてください。文章:#{micropost_params["content"]}"
-        prompt = "以下の私の強み・現状から、挑戦すべきアクションを140文字以内で簡潔に一つ提示してください。文章:#{micropost_params["content"]}"
+        prompt = "以下の私の強み・現状から挑戦すべきアクションを140文字以内で簡潔に一つ提示して。文章:#{micropost_params["content"]}"
         client = OpenAI::Client.new(access_token: @api_key)
         response = client.chat(
             parameters: {
             model: "gpt-3.5-turbo",
             messages: [{ role: "user", content: prompt}],
             temperature: 0.7,
+            max_tokens: 200,  # 応答の長さを指定
             }
         )
         revised_content = response.dig("choices", 0, "message", "content")
