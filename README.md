@@ -68,7 +68,21 @@ https://github.com/Cooler-Itoken/flow_app/assets/121410648/bd8ab875-7bd4-4e81-8e
 ## ER図
 
 ## 使用技術
-
-## 環境
+### フロントエンド
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+### バックエンド
+* Ruby 3.2.2
+* SQLite
+* Ruby on Rails 7.0.6
+### インフラ
+* Render
+### テスト
+* Rspec
+### その他
+* GitHub
+* OpenAI API
 
 ## 全体設計
