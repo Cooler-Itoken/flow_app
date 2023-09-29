@@ -77,6 +77,7 @@ https://github.com/Cooler-Itoken/flow_app/assets/121410648/bd8ab875-7bd4-4e81-8e
 | レスポンシブ対応 | 画面サイズに合わせて表示されます(Bootstrap使用) |
 
 ## ER図
+![スクリーンショット 2023-09-29 12 05 38](https://github.com/Cooler-Itoken/flow_app/assets/121410648/6e9b1fd0-06af-475c-a875-8a00deaefe5d)
 
 ## 使用技術
 ### フロントエンド
