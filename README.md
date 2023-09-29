@@ -97,3 +97,4 @@ https://github.com/Cooler-Itoken/flow_app/assets/121410648/bd8ab875-7bd4-4e81-8e
 * OpenAI API
 
 ## 全体設計
+![FlowApp-Diagram 001](https://github.com/Cooler-Itoken/flow_app/assets/121410648/c4330e86-2401-4b80-a1f4-18e858404e95)
