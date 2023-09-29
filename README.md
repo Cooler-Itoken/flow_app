@@ -1,6 +1,6 @@
 # Flow Appとは
 https://flow-app-1iqj.onrender.com/
-![logoのコピー](https://github.com/Cooler-Itoken/flow_app/assets/121410648/aaccad99-2f85-45ac-8255-44468c256b7a)
+![logoのコピー](https://github.com/Cooler-Itoken/flow_app/assets/121410648/951c7b0e-7aeb-469b-a143-b7c916fd7ede)
 
 ## 概要
 * 自分の強みとその現状を入力すると、人工知能(ChatGPT)が最適な課題アクションを提示してくれるSNS
@@ -38,7 +38,7 @@ https://github.com/Cooler-Itoken/flow_app/assets/121410648/bd8ab875-7bd4-4e81-8e
 たとえば、自分の強みが「創造性」なら、理想の商品やサービスの企画に挑戦し、上司にプレゼンテーションしてみる。
 自分の強みが「勇敢さ」なら、皆が尻込みするようなテーマを設定し、果敢にチャレンジしてみる。
 ※まるでゲームにハマるように最適な課題設定がキモとなります🎮
-![P220](https://github.com/Cooler-Itoken/flow_app/assets/121410648/50fa2ae0-c331-426c-9f01-dd59a70d7e59)
+![P220](https://github.com/Cooler-Itoken/flow_app/assets/121410648/17e21340-c4cc-4148-9a0a-177e48252eb3)
 
 ## 課題設定の限界
 ですが、適切な課題設定は誰でもできるのでしょうか？
@@ -77,7 +77,7 @@ https://github.com/Cooler-Itoken/flow_app/assets/121410648/bd8ab875-7bd4-4e81-8e
 | レスポンシブ対応 | 画面サイズに合わせて表示されます(Bootstrap使用) |
 
 ## ER図
-![スクリーンショット 2023-09-29 12 05 38](https://github.com/Cooler-Itoken/flow_app/assets/121410648/6e9b1fd0-06af-475c-a875-8a00deaefe5d)
+![スクリーンショット 2023-09-29 12 05 38](https://github.com/Cooler-Itoken/flow_app/assets/121410648/8b261f73-4853-483e-852e-247130f32195)
 
 ## 使用技術
 ### フロントエンド
@@ -98,4 +98,6 @@ https://github.com/Cooler-Itoken/flow_app/assets/121410648/bd8ab875-7bd4-4e81-8e
 * OpenAI API
 
 ## 全体設計
-![FlowApp-Diagram 001](https://github.com/Cooler-Itoken/flow_app/assets/121410648/c4330e86-2401-4b80-a1f4-18e858404e95)
+![FlowApp-Diagram 001](https://github.com/Cooler-Itoken/flow_app/assets/121410648/82142faf-637e-4d04-8d5f-7b8db17892fc)
+
+
