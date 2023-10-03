@@ -17,6 +17,8 @@
         <span>Remember me on this computer</span>
       <% end %>
 
+      <p><%= link_to "ゲストログイン", guest_login_path, method: :post, class: 'btn btn-primary' %></p>
+
       <%= f.submit "Log in", class: "btn btn-primary" %>
     <% end %>
 

@@ -2,6 +2,17 @@ class SessionsController < ApplicationController
   def new
   end
 
+  def guest_login
+    user = User.find_or_create_by(email: "guest@exapmle.com") do |user|
+      user.password = SecureRandom.urlsafe_base64
+      user.name = "ゲストユーザー"
+    end
+      session[:user_id] = user.id
+      flash[:success] = "ゲストユーザーとしてログインしました"
+      log_in user
+      redirect_to user
+  end
+
   def create
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
